@@ -1,13 +1,200 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Work Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: var(--bg-one);
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+:root {
+  --bg-one: #201f28;
+  --bg-two: #f6f6f8;
+}
+
+/* Navbar styling */
+
+nav {
+  display: flex;
+  padding-left: 5rem;
+  padding-top: 2.5rem;
+}
+
+.nav-list {
+  list-style: none;
+  margin: 0;
+  padding: 1rem;
+  padding-top: 2rem;
+}
+
+.logo {
+  border-radius: 100%;
+  height: 8rem;
+  width: 8rem;
+  background: var(--bg-one);
+  color: var(--bg-two);
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.nav-link {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--bg-one);
+  cursor: pointer;
+}
+
+.nav-link:hover:not(:nth-child(1)) {
+  text-decoration: line-through;
+}
+
+/* About styling */
+
+.list {
+  color: var(--bg-one);
+  padding: 1rem 5rem 2rem 3rem;
+  width: 9rem;
+  float: left;
+  margin: 0;
+  line-height: 2;
+  border-radius: 0.5rem;
+  list-style: inside;
+}
+
+.header {
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.text {
+  display: flex;
+  margin: 0;
+  padding-left: 2rem;
+  font-size: 1.5rem;
+  line-height: 2;
+  width: 60%;
+}
+
+@media screen and (max-width: 600px) {
+  .list {
+    position: static;
+    width: 65%;
+    margin: 0;
+    margin-bottom: 2rem;
+  }
+  .text {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Home styling */
+
+.home-text {
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+
+/* Shared styling */
+
+.section {
+  padding: 5rem;
+  padding-top: 2rem;
+  padding-left: 5rem;
+  animation: fadeIn ease-in-out 400ms;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .section {
+    padding: 3rem;
+  }
+  nav {
+    padding-left: 3rem;
+  }
+}
+
+/* Projects styling */
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  text-align: center;
+  gap: 1rem;
+}
+
+.proj-div {
+  margin-bottom: 2rem;
+  color: var(--bg-one);
+  border-radius: 0.5rem;
+}
+
+.proj-icon {
+  height: 1.5rem;
+}
+
+.proj-icon:nth-child(2) {
+  height: 1.3rem;
+}
+
+.proj-title {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.proj-link {
+  display: block;
+}
+
+.proj-link {
+  text-decoration: none;
+  border: 1px solid var(--bg-one);
+  color: var(--bg-one);
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  margin-left: 6rem;
+  margin-right: 6rem;
+}
+
+.proj-img {
+  height: 3rem;
+  border-radius: 50%;
+}
+
+/* Contact styling */
+
+.grid-item {
+  color: var(--bg-one);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.con-icon {
+  height: 2rem;
+}
+
+.con-link {
+  color: var(--bg-one);
+  text-decoration: none;
+}
+
+.proj-link:hover, .con-icon:hover, .con-link:hover {
+  text-decoration: line-through;
 }
