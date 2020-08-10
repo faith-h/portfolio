@@ -48,7 +48,7 @@ const Projects = () => (
           >
             source code
           </a>
-            &nbsp;
+          &nbsp;
           <a
             class='proj-link'
             target="_blank"
@@ -80,6 +80,34 @@ const Projects = () => (
             target="_blank"
             rel="noopener noreferrer"
             href='https://ghibli-api.netlify.app/'
+          >
+            demo
+          </a>
+        </div>
+      </div>
+
+      <div style={{ textAlign: 'center' }}>
+        <p class='header' style={{ margin: '3rem', marginBottom: '0' }}> currently building </p>
+        <hr style={{ width: '20%', marginBottom: '3rem', marginTop: '1rem' }} />
+        <div class='proj-div' style={{ maxWidth: '27rem', margin: 'auto' }}>
+          <img alt='utoob' class='proj-img' src='https://res.cloudinary.com/dddst4ppd/image/upload/v1597025001/chiro_iprrmq.jpg' />
+          <p class='proj-title'> slc chiropractic </p>
+          <p> <FontAwesomeIcon class='proj-icon' icon={faReact} /> </p>
+          <p> draper chiropractor </p>
+          <a
+            class='proj-link'
+            href='https://github.com/faith-h/slc-chiro'
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            source code
+          </a>
+          &nbsp;
+          <a
+            class='proj-link'
+            href='https://infallible-brahmagupta-6f7e64.netlify.app/'
+            target="_blank"
+            rel="noopener noreferrer"
           >
             demo
           </a>
