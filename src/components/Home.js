@@ -8,7 +8,7 @@ const Home = () => (
     </p>
     <p class='home-text' style={{ marginBottom: '1rem' }}> I'm Faith. </p>
     <p class='home-text' style={{ fontSize: '2rem' }}>
-      A full stack web developer based in Salt Lake City.
+      Full-stack web developer.
     </p>
     <span class='side-text'>
       <img src={arrow} class='side-img' />

@@ -10,12 +10,12 @@ const About = () => (
       <img class='avatar' src='https://res.cloudinary.com/dddst4ppd/image/upload/v1597778524/Avatar-Maker_1_o4kuza.svg' />
       <p class='text'>
         I'm a DevPoint Labs graduate and full-stack web developer powered by coffee.
-        Recently I've been doing freelance work for small businesses in Salt Lake City.
+        Recently I've been doing freelance work for small businesses.
         I enjoy the process of creating web applications from front to back and doing honest work for ambitious clients.
         When I'm not taking care of my plants or hiking, I'm working to improve my technical skills every day, one problem at a time. Check out my work and give me a shout!
         </p>
       <div style={{ textAlign: 'center', padding: '2rem' }}>
-        <p style={{ fontSize: '2rem' }}> I build with: </p>
+        <p style={{ fontSize: '2.5rem' }}> skills: </p>
         <div class='ab-grid'>
           <span class='list-item'> <FontAwesomeIcon icon={faHtml5} class='ab-icon' /> HTML </span>
           <span class='list-item'> <FontAwesomeIcon icon={faCss3Alt} class='ab-icon' /> CSS </span>
